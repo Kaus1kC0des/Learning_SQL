@@ -1,0 +1,571 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fswiss\fcharset0 Arial-BoldMT;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fnil\fcharset0 Menlo-Regular;\f4\fmodern\fcharset0 Courier-Bold;}
+{\colortbl;\red255\green255\blue255;\red24\green24\blue24;\red255\green255\blue255;\red30\green101\blue128;
+\red255\green255\blue254;\red0\green0\blue255;\red0\green0\blue0;\red81\green81\blue81;\red81\green81\blue81;
+\red78\green78\blue78;\red240\green240\blue240;\red15\green112\blue1;\red81\green96\blue112;}
+{\*\expandedcolortbl;;\cssrgb\c12157\c12157\c12157;\cssrgb\c100000\c100000\c100000;\cssrgb\c13725\c47059\c57647;
+\cssrgb\c100000\c100000\c99608;\cssrgb\c0\c0\c100000;\cssrgb\c0\c0\c0;\cssrgb\c39216\c39216\c39216\c40000;\cssrgb\c39216\c39216\c39216\c20000;
+\cssrgb\c38039\c38039\c38039;\cssrgb\c95294\c95294\c95294;\cssrgb\c0\c50196\c0;\cssrgb\c38824\c45490\c51373;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh17440\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Common SQL Commands\cb1 \
+\
+\cb3 The objective of this reading is to teach you how to name and explain the main commands in SQL. SQL is the most widely used database query language. It is designed for retrieving and managing data in a relational database. SQL can be used to perform different types of operations in the database such as accessing data, describing data, manipulating data and setting users roles and privileges (permissions).\'a0\cb1 \
+\cb3 Here you will learn about the main commands used in SQL. At a later stage you will explore relevant examples of how to use these commands with a detailed explanation of the SQL syntax for key operations such as to create, insert, update and delete data in the database.\'a0\cb1 \
+\cb3 The SQL Commands are grouped into four categories known as DDL, DML, DCL and TCL depending on their functionality, namely the type of operation they\'92re used to perform.\'a0 Let\'92s explore these commands in greater detail.\cb1 \
+\pard\pardeftab720\sa232\partightenfactor0
+
+\f1\b \cf2 \cb3 Data Definition Language (DDL)
+\f0\b0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 The SQL DDL category provides commands for defining, deleting and modifying tables in a database. Use the following commands in this category.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \cb3 \ul \ulc2 CREATE Command
+\f0\b0 \cb1 \ulnone \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Purpose: To create the database or tables inside the database\cb1 \
+\cb3 Syntax to create a table with three columns:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs24 \cf0 \
+\
+\pard\pardeftab720\qr\partightenfactor0
+
+\f3 \cf4 \cb5 1\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf6 \cb5 CREATE\cf2 \'a0\cf6 TABLE\cf2 \'a0table_name\'a0(column_name1\'a0datatype(\cf6 size\cf2 ),\'a0column_name2\'a0datatype(\cf6 size\cf2 ),\'a0column_name3\'a0datatype(\cf6 size\cf2 ));\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 \cb7 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb5 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb9 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb11 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs28 \cf2 \cb3 \ul DROP\'a0Command
+\f0\b0 \ulnone  \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Purpose: To delete a database or a table inside the database.\'a0\cb1 \
+\cb3 Syntax to drop a table:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs24 \cf0 \
+\
+\pard\pardeftab720\qr\partightenfactor0
+
+\f3 \cf4 \cb5 1\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf6 \cb5 DROP\cf2 \'a0\cf6 TABLE\cf2 \'a0table_name;\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 \cb7 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb9 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb11 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \
+
+\f1\b \cb3 \ul ALTER\'a0Command
+\f0\b0 \ulnone  \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Purpose: To change the structure of the tables in the database such as changing the name of a table, adding a primary key to a table, or adding or deleting a column in a table.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+Syntax to add a column into a table:
+\f1\b           
+\f0\b0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs24 \cf0 \
+\
+\pard\pardeftab720\qr\partightenfactor0
+
+\f3 \cf4 \cb5 1\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf6 \cb5 ALTER\cf2 \'a0\cf6 TABLE\cf2 \'a0table_name\'a0\cf6 ADD\cf2 \'a0(column_name\'a0datatype(\cf6 size\cf2 ));\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 \cb7 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb9 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb11 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3       2. Syntax to add a primary key to a table:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs24 \cf0 \
+\
+\pard\pardeftab720\qr\partightenfactor0
+
+\f3 \cf4 \cb5 1\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf6 \cb5 ALTER\cf2 \'a0\cf6 TABLE\cf2 \'a0table_name\'a0\cf6 ADD\cf2 \'a0\cf6 primary\cf2 \'a0\cf6 key\cf2 \'a0(column_name);\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 \cb7 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb9 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb11 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \
+
+\f1\b \cb3 \ul TRUNCATE\'a0Command
+\f0\b0 \cb1 \ulnone \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Purpose: To remove all records from a table, which will empty the table but not delete the table itself.\'a0\cb1 \
+\cb3 Syntax to truncate a table:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs24 \cf0 \
+\
+\pard\pardeftab720\qr\partightenfactor0
+
+\f3 \cf4 \cb5 1\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf6 \cb5 TRUNCATE\cf2 \'a0\cf6 TABLE\cf2 \'a0table_name;\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 \cb7 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb9 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb11 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \
+
+\f1\b \cb3 \ul COMMENT\'a0Command
+\f0\b0 \cb1 \ulnone \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Purpose: To add comments to explain or document SQL statements by using double dash (
+\f4\b\fs26\fsmilli13300 --
+\f0\b0\fs28 ) at the start of the line. Any text after the double dash will not be executed as part of the SQL statement. These comments are not there to build the database. They are only for your own use.\'a0\'a0\'a0\cb1 \
+\cb3 Syntax to 
+\f4\b\fs26\fsmilli13300 COMMENT
+\f0\b0\fs28  a line in SQL:\'a0\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs24 \cf0 \
+\
+\pard\pardeftab720\qr\partightenfactor0
+
+\f3 \cf4 \cb5 1\cb1 \
+\cb5 2\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf12 \cb5 --Retrieve\'a0all\'a0data\'a0from\'a0a\'a0table\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb5 SELECT\cf2 \'a0\cf13 *\cf2 \'a0\cf6 FROM\cf2 \'a0table_name;\'a0\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 \cb7 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb9 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb11 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs28 \cf2 \cb3 Data Query Language (DQL)
+\f0\b0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 The SQL DQL commands provide the ability to query and retrieve data from the database.\'a0 Use the following command in this category.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \cb3 \ul SELECT Command
+\f0\b0 \cb1 \ulnone \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Purpose: To retrieve data from tables in the database.\'a0\cb1 \
+\cb3 Syntax to select data from a table:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs24 \cf0 \
+\
+\pard\pardeftab720\qr\partightenfactor0
+
+\f3 \cf4 \cb5 1\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf6 \cb5 SELECT\cf2 \'a0\cf13 *\cf2 \'a0\cf6 FROM\cf2 \'a0table_name;\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 \cb7 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb9 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb11 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs28 \cf2 \cb3 Data Manipulation Language (DML)
+\f0\b0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 The SQL DML commands provide the ability to query, delete and update data in the database.\'a0 Use the following commands in this category.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \cb3 \ul INSERT Command
+\f0\b0 \cb1 \ulnone \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Purpose: To add records of data into an existing table. \
+Syntax to insert data into three columns in a table:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs24 \cf0 \
+\
+\pard\pardeftab720\qr\partightenfactor0
+
+\f3 \cf4 \cb5 1\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf6 \cb5 INSERT\cf2 \'a0\cf6 INTO\cf2 \'a0table_name\'a0(column1,\'a0column2,\'a0column3)\'a0\cf6 VALUES\cf2 \'a0(value1,\'a0value2,\'a0value3);\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 \cb7 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb9 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb11 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \
+
+\f1\b \cb3 \ul UPDATE Command 
+\f0\b0 \cb1 \ulnone \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Purpose: To modify or update data contained within a table in the database.\'a0\cb1 \
+\cb3 Syntax to update data in two columns:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs24 \cf0 \
+\
+\pard\pardeftab720\qr\partightenfactor0
+
+\f3 \cf4 \cb5 1\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf6 \cb5 UPDATE\cf2 \'a0table_name\'a0\cf6 SET\cf2 \'a0column1\'a0\cf13 =\cf2 \'a0value1,\'a0column2\'a0\cf13 =\cf2 \'a0value2\'a0\cf6 WHERE\cf2 \'a0condition;\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 \cb7 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb9 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb11 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \
+
+\f1\b \cb3 \ul DELETE Command
+\f0\b0 \cb1 \ulnone \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Purpose: To delete data from a table in the database.\cb1 \
+\cb3 Syntax to delete data:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs24 \cf0 \
+\
+\pard\pardeftab720\qr\partightenfactor0
+
+\f3 \cf4 \cb5 1\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf6 \cb5 DELETE\cf2 \'a0\cf6 FROM\cf2 \'a0table_name\'a0\cf6 WHERE\cf2 \'a0condition;\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 \cb7 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb9 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb11 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 Data Control Language (DCL)
+\f0\b0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 You use DCL to deal with the rights and permissions of users of a database system. You can execute SQL commands to perform different types of operations such as create and drop tables. To do this, you need to have user rights set up. This is called user privileges. This category deals with advanced functions or operations in the database. Note that this category can have a generic description of the two main commands. Use the following commands in this category:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\b\fs26\fsmilli13300 \cf2 \cb3 GRANT
+\f1\fs28  
+\f0\b0 Command to provide the user of the database with the privileges required to allow users to access and manipulate the database.\cb1 \
+
+\f4\b\fs26\fsmilli13300 \cb3 REVOKE
+\f1\fs28  
+\f0\b0 Command to remove permissions from any user.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \cb3 Transaction Control Language (TCL)\'a0
+\f0\b0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 The TCL commands are used to manage transactions in the database. These are used to manage the changes made to the data in a table by utilizing the DML commands. It also allows SQL statements to be grouped together into logical transactions. This category deals with advanced functions or operations in a database. Note that this category can have a generic description of the two main commands. Use the following commands in this category:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\b\fs26\fsmilli13300 \cf2 \cb3 COMMIT
+\f1\fs28  
+\f0\b0 Command to save all the work you have already done in the database.\'a0\cb1 \
+
+\f4\b\fs26\fsmilli13300 \cb3 ROLLBACK
+\f1\fs28  
+\f0\b0 Command to restore a database to the last committed state.\cb1 \
+}
